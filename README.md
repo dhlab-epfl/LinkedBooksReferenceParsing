@@ -1,7 +1,6 @@
 # LinkedBooksReferenceParsing: Annotations Dataset and CRF Parsing
 
-TODO Zenodo
-[![DOI](https://zenodo.org/badge/79789632.svg)](https://zenodo.org/badge/latestdoi/79789632)
+[![DOI](https://zenodo.org/badge/87069210.svg)](https://zenodo.org/badge/latestdoi/87069210)
 
 A dataset of annotated references (in both reference lists and footnotes) from journal issues and monographs on the history of Venice, created in the context of the [LinkedBooks project](http://dhlab.epfl.ch/page-127959-en.html). 
 
