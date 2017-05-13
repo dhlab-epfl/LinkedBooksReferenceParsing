@@ -17,7 +17,7 @@ Along the dataset of annotations, a framework to train your own parsers is provi
     * [annotated_dataset](dataset/annotated_dataset.json.zip) The annotated dataset in json format (zip compressed).
     * [report.p](dataset/report.p) A set of statistics on the annotated dataset, pickled.
     * [report.txt](dataset/report.txt) A set of statistics on the annotated dataset, txt.
-    * [sources](dataset/sources.csv) List of monographs and journal issues which have been annotated, with number of annotations for each. TODO (put id, issue, year, name of journal or monograph, number of annotations specific and generic).
+    * [sources](dataset/sources.csv) List of monographs and journal issues which have been annotated, with number of annotations for each. TODO Matteo (put id, issue, year, name of journal or monograph, number of annotations specific and generic).
 * `M1.ipynb` a Python notebook to train a CRF parsing model using specific reference tags (e.g. author, title, publication year). You can use the annotated dataset in json format as input here.
 * `M2.ipynb` a Python notebook to train a CRF parsing model using generic begin/end reference tags (e.g. begin-secondary, in-secondary, end-secondary for a reference to a secondary source).
 * `models/`
