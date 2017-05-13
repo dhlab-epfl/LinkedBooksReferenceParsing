@@ -1,0 +1,15 @@
+overall_documents : 1377 (books or journal issues)
+total_annotations : 198839
+total_specific : 157768
+total_general : 41071
+total_general_monographs : 11360
+total_general_journals : 29711
+avg annotated docs over total docs : 0.25
+avg annotated pages per annotated doc : 16.99
+avg annotated pages over total pages : 0.03
+
+total_general_per_class : {'meta-annotation': 6586, 'secondary-partial': 13511, 'primary-full': 4054, 'primary-partial': 3588, 'secondary-full': 13332}
+total_general_per_class_monographs : {'meta-annotation': 2367, 'secondary-partial': 2183, 'primary-full': 111, 'primary-partial': 457, 'secondary-full': 6242}
+total_general_per_class_journals : {'meta-annotation': 4219, 'secondary-partial': 11328, 'primary-full': 3943, 'primary-partial': 3131, 'secondary-full': 7090}
+
+total_specific_per_class : {'note': 710, 'volume': 4740, 'archivalfond': 440, 'abbreviation': 4713, 'century': 10, 'conjunction': 3131, 'curator': 1, 'topicdate': 23, 'editor': 3263, 'folder': 598, 'foliation': 1549, 'parte': 231, 'publicationnumber-year': 2583, 'series': 577, 'year': 316, 'cedola': 9, 'box': 1782, 'table': 75, 'codex': 908, 'date': 3449, 'column': 412, 'period': 27, 'other': 344, 'mazzo': 23, 'publicationyear': 14477, 'archivalunit': 442, 'fascicolo': 251, 'pagination': 18055, 'numbering': 4044, 'tomo': 730, 'notary': 192, 'abbreviatedtitle': 3987, 'archivalseries': 354, 'attachment': 1028, 'publisher': 3777, 'fond': 6, 'publicationplace': 13925, 'archive': 3252, 'library': 735, 'responsible': 12, 'registry': 1351, 'parchment': 59, 'citation': 11, 'chapter': 182, 'publicationspecifications': 1502, 'cartulation': 2662, 'filza': 488, 'protocollo': 18, 'author': 22245, 'voce': 81, 'publicationnumber': 892, 'title': 27051, 'archivalreference': 5880, 'website': 6, 'appendix': 159}
