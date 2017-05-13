@@ -5,14 +5,13 @@ TODO Zenodo
 
 A dataset of annotated references (in both reference lists and footnotes) from journal issues and monographs on the history of Venice, created in the context of the [LinkedBooks project](http://dhlab.epfl.ch/page-127959-en.html). 
 
-The dataset contains annotated reference lists of monographs (as described in: ADD) and annotated references from the footnotes of journal issues from the following journals (mostly, but not exclusively in Italian): Ateneo Veneto, Archvio Veneto, Studi Veneziani. THis dataset was digitized, OCRed (using ABBYY FineReader) and annotated (using Brat ADD) from 2014 to 2016.
-ADD MORE DETAILS (list of annotated issues from journals, and monographs).
+The dataset contains annotated reference lists of monographs and annotated references from the footnotes of journal issues from the following journals (mostly, but not exclusively in Italian): Ateneo Veneto, Archvio Veneto, Studi Veneziani. This dataset was digitized, OCRed (using ABBYY FineReader) and annotated (using Brat ADD) from 2014 to 2016.
 
 Along the dataset of annotations, a framework to train your own parsers is provided, based on Conditional Random Fields. Feel free to use it to build your own parser, and if you improve on our results, please let us know!
 
 ## Contents
 
-* `LICENCE` MIT.
+* `LICENSE` CC BY 4.0.
 * `README.md` this file.
 * `dataset/`
     * [annotated_dataset](dataset/annotated_dataset.json.zip) The annotated dataset in json format (zip compressed).
@@ -96,8 +95,23 @@ The annotated dataset consists of a list of documents, either monographs or jour
     ```
 
 ## Annotation taxonomy
+     
+Taxonomy for generic tags. The main distinction is among primary sources (documents at an archive or rare books), secondary sources (monographs) and meta-annotations (for journal articles, contributions and other publications contained within another publication):
 
-The taxonomy for generic annotations. Read as: `Tag (as in the dataset): ConsolidatedTag (as used in the paper's results: some tags are merged)`. The main change from the annotated dataset to the generic dataset has to do with the suppression of full and partial annotations:
+     'meta-annotation'
+     'primary-full'
+     'primary-partial'
+     'secondary-full'
+     'secondary-partial'
+     
+Taxonomy for begin'end tags:
+
+    'b' # begin
+    'e' # end
+    'i' # in
+    'o' # out
+    
+The taxonomy for generic begin-end annotations. Read as: `Tag (as in the dataset): ConsolidatedTag (as used in the paper's results: some tags are merged)`. The main change from the annotated dataset to the generic dataset has to do with the suppression of full and partial annotations:
 
      'b-primary-full': 'b-primary', # Primary source, full reference, begin
      'i-primary-full': 'i-primary', # Primary source, full reference, in
@@ -114,9 +128,9 @@ The taxonomy for generic annotations. Read as: `Tag (as in the dataset): Consoli
      'b-secondary-partial': 'b-secondary', # Secondary source, partial reference, begin
      'i-secondary-partial': 'i-secondary', # Secondary source, partial reference, in
      'e-secondary-partial': 'e-secondary', # Secondary source, partial reference, end
-     'o': 'o', # out of reference
+     'o': 'o', # out of a reference
 
-The taxonomy for specific annotations. Read as: `Tag (as in the dataset): ConsolidatedTag (as used in the paper's results: some tags are merged)`. Note that several tags indeed need consolidation as they are under represented in the dataset. Their presence relates to the great variety of materials cited by historians: 
+The taxonomy for specific annotations. This is a working taxonomy, which is provided with a consolidated version as well. The main challenge is to track the necessary components of references to both primary and secondary sources. Read as: `Tag (as in the dataset): ConsolidatedTag (as used in the paper's results: some tags are merged)`. It is helpful to read this taxonomy with the report on the number of annotations per tag, so as to distinguish between often used and barely used tags. Note that several tags indeed need consolidation as they are under represented in the dataset. Their presence relates to the great variety of materials cited by historians: 
     
     'abbreviatedtitle': 'title', # Title
     'abbreviation': 'abbreviation', # Abbreviation such as Ivi, Ibid, Cit, Cf, etc.
@@ -145,7 +159,6 @@ The taxonomy for specific annotations. Read as: `Tag (as in the dataset): Consol
     'folder': 'folder', # Folder
     'foliation': 'foliation', # Foliation such as f. 12.
     'fond': 'archivalreference', # # Archival record group.
-    'implicit': '', # Implicit reference
     'library': 'archive_lib', # Library
     'mazzo': 'ref', # Group of documents
     'notary': 'archivalreference', # Notary (name of a person)
@@ -199,13 +212,15 @@ The project is supported by the Swiss National Fund, with grants 205121_159961 a
 
 ## Please cite as
 
-Giovanni Colavizza, Matteo Romanello, Martina Babetto, Silvia Ferronato. (2017). dhlab-epfl/LinkedBooksReferenceParsing: LinkedBooksReferenceParsing (version 1.0) [Data set]. Zenodo. TBD
+Giovanni Colavizza and Matteo Romanello. (2017). "Annotated References in the Historiography on Venice: XIX-XXI centuries". Submitted to the Journal of Open Humanities Data.
 
     @misc{colavizza_parsing_2017,
-      author       = {Giovanni Colavizza, Matteo Romanello, Martina Babetto and Silvia Ferronato},
-      title        = {{dhlab-epfl/LinkedBooksReferenceParsing: 
-                       LinkedBooksReferenceParsing (version 1.0)}},
-      month        = jun,
+      author       = {Giovanni Colavizza and Matteo Romanello},
+      title        = {{Annotated References in the Historiography on Venice: XIX-XXI centuries}},
+      journal      = {{Journal of Open Humanities Data}},
+      volume       = {TODO},
+      number       = {TODO},
+      pages        = {TODO},
       year         = 2017,
       doi          = {TODO},
       url          = {TODO}
