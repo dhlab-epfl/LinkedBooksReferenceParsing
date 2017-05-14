@@ -225,4 +225,4 @@ Giovanni Colavizza and Matteo Romanello. (2017). "Annotated References in the Hi
       url          = {TODO}
     }
     
-Repository: Giovanni Colavizza and Matteo Romanello. (2017). dhlab-epfl/LinkedBooksReferenceParsing: 1.0 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.579621
+Repository: Giovanni Colavizza and Matteo Romanello. (2017). dhlab-epfl/LinkedBooksReferenceParsing: 1.0 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.579679
