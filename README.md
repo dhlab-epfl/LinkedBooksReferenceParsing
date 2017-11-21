@@ -35,7 +35,7 @@ The annotated dataset consists of a list of documents, either monographs or jour
     {
         "bid": "BVE0058909", # identifier of monograph or jounal. Find details here: http://id.sbn.it/bid/BVE0058909
         "doc_number": "", #issue number if an issue
-        "doc_type": "monograph", #type of document: monpgraph or journal_issue
+        "doc_type": "monograph", #type of document: monograph or journal_issue
         "pages": { # dicionary with page number and list of contents for every page
             "2": { # page number
                 "is_annotated": true, #is the page has been annotated (always at true in this dataset)
@@ -211,16 +211,15 @@ The project is supported by the Swiss National Fund, with grants 205121_159961 a
 
 ## Please cite as
 
-Giovanni Colavizza and Matteo Romanello. (2017). "Annotated References in the Historiography on Venice: XIX-XXI centuries". Submitted to the Journal of Open Humanities Data.
+Colavizza, G. & Romanello, M., (2017). Annotated References in the Historiography on Venice: 19th–21st centuries. Journal of Open Humanities Data. 3, p.2. DOI: http://doi.org/10.5334/johd.9.
 
     @misc{colavizza_parsing_2017,
       author       = {Giovanni Colavizza and Matteo Romanello},
-      title        = {{Annotated References in the Historiography on Venice: XIX-XXI centuries}},
+      title        = {{Annotated References in the Historiography on Venice: 19th–21st centuries}},
       journal      = {{Journal of Open Humanities Data}},
-      volume       = {TODO},
-      number       = {TODO},
-      pages        = {TODO},
+      volume       = {3},
+      pages        = {2},
       year         = 2017,
-      doi          = {TODO},
-      url          = {TODO}
+      doi          = {10.5334/johd.9},
+      url          = {http://doi.org/10.5334/johd.9}
     }
